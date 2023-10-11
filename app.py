@@ -35,4 +35,5 @@ def predict():
     return render_template('index.html', prediction=language[0])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000)) #default 5000 for testing if its not found
+    app.run(host='0.0.0.0', port=port) #0.0.0.0 any ip adress
