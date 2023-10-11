@@ -1,3 +1,6 @@
+from flask import Flask, request, jsonify, render_template
+
+
 import joblib
 import pandas as pd
 import os
@@ -14,8 +17,22 @@ def predict_language(text):
     x = count_vectorizer.transform([text]).toarray()
     language = model.predict(x)
     language = le.inverse_transform(language)
-    print(language[0])
+    return language[0]
 
-predict_language("Hello, how are you?")
-predict_language("Bonne après-midi")
-predict_language("Feliz, ola, dinero, cumpleaños")
+#Web App begins
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    text = request.form['text']
+    x = count_vectorizer.transform([text]).toarray()
+    language = model.predict(x)
+    language = le.inverse_transform(language)
+    return render_template('index.html', prediction=language[0])
+
+if __name__ == '__main__':
+    app.run(debug=True)

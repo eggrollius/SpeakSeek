@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Detector</title>
+</head>
+<body>
+    <h2>Language Detector</h2>
+    <form action="/predict" method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text here..."></textarea><br><br>
+        <input type="submit" value="Predict Language">
+    </form>
+    {% if prediction %}
+    <h3>Predicted Language: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
