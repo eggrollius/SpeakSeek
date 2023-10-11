@@ -76,10 +76,8 @@ easydict==1.10
 ecos==2.0.12
 editdistance==0.6.2
 eerepr==0.0.4
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl#sha256=83276fc78a70045627144786b52e1f2728ad5e29e5e43916ec37ea9c26a11212
 entrypoints==0.4
 ephem==4.1.4
-es-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.6.0/es_core_news_sm-3.6.0-py3-none-any.whl#sha256=917d0b6359b27b222ccd616c47b43ee951f05da7402fdccce99364a465fa95d6
 et-xmlfile==1.1.0
 etils==1.5.0
 etuples==0.3.9
@@ -98,7 +96,7 @@ flatbuffers==23.5.26
 flax==0.7.4
 folium==0.14.0
 fonttools==4.43.1
-fr-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.6.0/fr_core_news_sm-3.6.0-py3-none-any.whl#sha256=88ba4254539a7efb51d5e0c5b6c4ea5b350542752b634088274c1b97d8c8b8ee
+
 frozendict==2.3.8
 frozenlist==1.4.0
 fsspec==2023.6.0
@@ -131,8 +129,6 @@ google-cloud-functions==1.13.3
 google-cloud-language==2.9.1
 google-cloud-storage==2.8.0
 google-cloud-translate==3.11.3
-google-colab @ file:///colabtools/dist/google-colab-1.0.0.tar.gz#sha256=b4dd42c2c01c4d7ab62ee67d786ecc434d1326133a12ede6ee9126a1f025dd8f
-google-crc32c==1.5.0
 google-pasta==0.2.0
 google-resumable-media==2.6.0
 googleapis-common-protos==1.60.0
@@ -176,11 +172,8 @@ ipython-genutils==0.2.0
 ipython-sql==0.5.0
 ipytree==0.2.2
 ipywidgets==7.7.1
-it-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/it_core_news_sm-3.6.0/it_core_news_sm-3.6.0-py3-none-any.whl#sha256=ad0748799d33a5115864ef5dbf24413428c31c8fee11f24eea0deac819ed7972
 itsdangerous==2.1.2
 jax==0.4.16
-jaxlib @ https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.4.16+cuda11.cudnn86-cp310-cp310-manylinux2014_x86_64.whl#sha256=78b3a9acfda4bfaae8a1dc112995d56454020f5c02dba4d24c40c906332efd4a
-jeepney==0.7.1
 jieba==0.42.1
 Jinja2==3.1.2
 joblib==1.3.2
@@ -297,7 +290,6 @@ proto-plus==1.22.3
 protobuf==3.20.3
 psutil==5.9.5
 psycopg2==2.9.9
-pt-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.6.0/pt_core_news_sm-3.6.0-py3-none-any.whl#sha256=61a9193dd1cb7ae1a65a85f7c98f4b14077a8bd3dc34a486aa620a54b353a1d9
 ptyprocess==0.7.0
 py-cpuinfo==9.0.0
 py4j==0.10.9.7
@@ -417,13 +409,9 @@ tinycss2==1.2.1
 toml==0.10.2
 tomli==2.0.1
 toolz==0.12.0
-torch @ https://download.pytorch.org/whl/cu118/torch-2.0.1%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=a7a49d459bf4862f64f7bc1a68beccf8881c2fa9f3e0569608e16ba6f85ebf7b
-torchaudio @ https://download.pytorch.org/whl/cu118/torchaudio-2.0.2%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=26692645ea061a005c57ec581a2d0425210ac6ba9f923edf11cc9b0ef3a111e9
 torchdata==0.6.1
 torchsummary==1.5.1
 torchtext==0.15.2
-torchvision @ https://download.pytorch.org/whl/cu118/torchvision-0.15.2%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=19ca4ab5d6179bbe53cff79df1a855ee6533c2861ddc7389f68349d8b9f8302a
-tornado==6.3.2
 tqdm==4.66.1
 traitlets==5.7.1
 traittypes==0.2.1

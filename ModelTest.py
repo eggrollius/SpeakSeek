@@ -1,9 +1,9 @@
 import joblib
 import pandas as pd
+import os
 from sklearn.feature_extraction.text import CountVectorizer
-
 # Define the directory where your models are saved
-directory = '/model/'
+directory = 'model'
 
 # Load the model and other necessary components
 model = joblib.load(os.path.join(directory, 'multinomial_nb_model.pkl'))
@@ -17,6 +17,6 @@ def predict_language(text):
     print(language[0])
 
 predict_language("Hello, how are you?")
-predict_language("Bonjour mon ami")
-predict_language("donda est la bibliotecha")
+predict_language("Bonne après-midi")
+predict_language("Feliz cumpleaños")
 
