@@ -18,5 +18,4 @@ def predict_language(text):
 
 predict_language("Hello, how are you?")
 predict_language("Bonne après-midi")
-predict_language("Feliz cumpleaños")
-
+predict_language("Feliz, ola, dinero, cumpleaños")
