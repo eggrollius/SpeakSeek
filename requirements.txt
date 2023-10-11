@@ -200,7 +200,7 @@ librosa==0.10.1
 lightgbm==4.0.0
 linkify-it-py==2.0.2
 lit==17.0.2
-llvmlite==0.39.1
+llvmlite>=0.39.1
 locket==1.0.0
 logical-unification==0.4.6
 LunarCalendar==0.0.9
