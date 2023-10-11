@@ -254,9 +254,9 @@ optax==0.1.7
 orbax-checkpoint==0.4.1
 osqp==0.6.2.post8
 packaging==23.2
-pandas==1.5.3
+pandas>=1.5.3
 pandas-datareader==0.10.0
-pandas-gbq==0.17.9
+pandas-gbq>=0.17.9
 pandocfilters==1.5.0
 panel==1.2.3
 param==1.13.0
