@@ -3,52 +3,56 @@
 <head>
     <title>Language Detector</title>
     <link rel="stylesheet" href="static\styles.css">
-
+    <script defer src="static\index.js"></script> 
 </head>
-<!-- Project Title and Description -->
-<section class="project-intro">
-    <h1>SpeakSeek</h1>
-    <h6>Ethan Huynh, Carleton University</h6>
-    <p>A modern language detection tool built using advanced machine learning techniques.</p>
-</section>
+<body>
+    <!-- Project Title and Description -->
+    <section class="project-intro">
+        <h1>SpeakSeek</h1>
+        <h6>Ethan Huynh, Carleton University</h6>
+        <p>A modern language detection tool built using advanced machine learning techniques.</p>
+    </section>
 
-<!-- Language Detector Tool -->
-<section class="container">
-    <h2>Try the Language Detector</h2>
-    <form action="/predict" method="post">
-        <textarea name="text" rows="4" cols="50" placeholder="Enter text here..."></textarea><br><br>
-        <input type="submit" value="Predict Language">
-    </form>
-    {% if prediction %}
-    <h3>Predicted Language: {{ prediction }}</h3>
-    {% endif %}
-</section>
+    <!-- Language Detector Tool -->
+    <section class="container">
+        <h2>Try the Language Detector</h2>
+        <form id="userInput" action="/predict" method="post">
+            <div id="textAreaContainer">
+                <textarea id="textArea" name="text" rows="5" cols="50" placeholder="Enter text here..."></textarea>
+            </div>
+            <input id="submitButton" type="submit" value="Predict Language" disabled>
+            
+       
+        </form>
+        {% if prediction %}
+        <h3>Predicted Language: {{ prediction }}</h3>
+        {% endif %}
+    </section>
 
-<!-- Project Details -->
-<section class="project-details">
-    <h2>About This Project</h2>
-    <p>This project utilizes the multinomial-naive-bayes algorithm to detect the language of a given text. This is an updated version of a project for the CAIS 2023 Hackathon.</p>
-    <h3>Technologies Used</h3>
-    <ul>
-        <li>Python</li>
-        <li>Scikit-learn</li>
-        <li>pandas</li>
-        <li>Flask</li>
-        <!-- Add more technologies if required -->
-    </ul>
-</section>
+    <!-- Project Details -->
+    <section class="project-details">
+        <h2>About This Project</h2>
+        <p>This project utilizes the multinomial-naive-bayes algorithm to detect the language of a given text. This is an updated version of a project for the CAIS 2023 Hackathon.</p>
+        <h3>Technologies Used</h3>
+        <ul>
+            <li>Python</li>
+            <li>Scikit-learn</li>
+            <li>pandas</li>
+            <li>Flask</li>
+            <!-- Add more technologies if required -->
+        </ul>
+    </section>
 
-<!-- Links and Contacts -->
-<footer>
-    <h2>Contact & Links</h2>
-    <ul>
-        <li><a href="https://github.com/eggrollius/SpeakSeek" target="_blank">Project Repository</a></li>
-        <li><a href="https://github.com/eggrollius/" target="_blank">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/ethanthuynh" target="_blank">LinkedIn</a></li>
-        <li><a href="\static\resume.pdf" target="_blank">Resume</a></li>
-        <!-- Add more links if required -->
-    </ul>
-</footer>
+    <!-- Links and Contacts -->
+    <footer>
+        <h2>Contact & Links</h2>
+        <ul>
+            <li><a href="https://github.com/eggrollius/SpeakSeek" target="_blank">Project Repository</a></li>
+            <li><a href="https://github.com/eggrollius/" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/ethanthuynh" target="_blank">LinkedIn</a></li>
+            <li><a href="\static\resume.pdf" target="_blank" disabled>Resume</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
