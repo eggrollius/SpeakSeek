@@ -40,5 +40,36 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
-    
+
+    document.getElementById('presetSelect').addEventListener('change', async function() {
+        const selectedLang = this.value;
+        const textArea = document.getElementById('textArea');
+        
+        const quote = await fetchRandomQuote(selectedLang);
+        textArea.value = quote;
+        textArea.dispatchEvent(new Event('input'));
+    });
 });
+
+async function fetchRandomQuote(langCode) {
+    const url = `https://quotes15.p.rapidapi.com/quotes/random/?language_code=${langCode}`;
+    const headers = {
+        'X-RapidAPI-Key': 'ae3e3d3bfbmsh2f29f317759b088p18b9a9jsn040d39350b3b',
+        'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+    };
+
+    try {
+        const response = await fetch(url, {
+            headers: headers
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            return data.content;
+        } else {
+            console.log(`HTTP error: ${response.status}`);
+        }
+    } catch (error) {
+        console.error("There was a problem with the fetch operation:", error);
+    }
+}

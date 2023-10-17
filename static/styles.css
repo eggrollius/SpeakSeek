@@ -95,3 +95,10 @@ footer a:hover {
         padding: 10px;
     }
 }
+select#presetSelect {
+    padding: 10px; border: 1px solid #ccc; border-radius: 5px;
+    background: #fff; color: #333; font-family: 'Arial', sans-serif;
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+  }
+  
+select#presetSelect:focus { border-color: #000000; outline: none; }
